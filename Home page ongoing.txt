@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #121212;
+            padding: 40px;
+            text-align: right;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: #9b6bf1;
+        }
+
+        /* Main content area */
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 10%;
+        }
+
+        /* Left section for text */
+        .text-section {
+            flex: 1;
+            max-width: 60%;
+        }
+
+        h1 {
+            font-size:40px;
+            margin: 0;
+        }
+
+        h1 span {
+            color: #9b6bf1;
+        }
+
+        .sub-title {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin: 10px 0;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        /* White line under Design Enthusiast */
+        .sub-title::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background-color: white;
+            bottom: 0;
+            left: 40%;
+            transform: translateX(-50%);
+        }
+
+        .description {
+            margin: 20px 0;
+            font-weight: 300;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            border: 2px solid #9b6bf1;
+            background-color: transparent;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #9b6bf1;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: #9b6bf1;
+        }
+
+        /* Right section for profile image */
+        .profile-pic {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: #9b6bf1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px; /* Adjust this for spacing */
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-section {
+                max-width: 100%;
+            }
+
+            .profile-pic {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Works</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Left Section (Text Content) -->
+        <div class="text-section">
+             <h1>Hello</h1>
+        <h1>I am <span>MANASA SHANKAR</span></h1>
+          <h3 style="color:#a9a9a9;font-family:Poppins;";>A Design Enthusiast</h3>
+    <hr align="left" width="30%" size="3" color="white" noshade><br>
+            <p class="description">Welcome to my portfolio! Here, you'll find a showcase of my work, skills, and passion for design. I’m dedicated to delivering creative solutions and continuous growth in everything I do. Take a look around to explore my projects and get to know me better. Let's connect and create something amazing together!</p><br><br>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="#" class="btn btn-primary">Download CV</a>
+                <a href="#" class="btn">More</a>
+            </div>
+        </div>
+
+        <!-- Right Section (Profile Picture) -->
+        <div class="profile-pic">
+            <img src="https://i.pinimg.com/736x/41/6a/47/416a4741bd1cfb249a9ea1d9766a9bef.jpg" alt="Profile Picture">
+        </div>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Manasa Shankar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #121212;
+            padding: 40px;
+            text-align: right;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+
+        nav a.active {
+            color: #9b6bf1;
+            font-weight: 600;
+        }
+
+        nav a.contact-btn {
+            padding: 10px 20px;
+            background-color: #9b6bf1;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a.contact-btn:hover {
+            background-color: white;
+            color: #9b6bf1;
+            border-color: #9b6bf1;
+        }
+
+        /* About Me Section */
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px;
+        }
+
+        /* Text area */
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h1 {
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .about-text h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        .about-text p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Learn More button */
+        .learn-more-btn {
+            padding: 10px 30px;
+            background-color: #9b6bf1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size:15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+         .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            border: 2px solid #9b6bf1;
+            background-color: transparent;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .learn-more-btn:hover {
+            background-color: white;
+            color: #9b6bf1;
+        }
+
+        /* Image area */
+        .about-image {
+            flex:1;
+            text-align: right;
+        }
+
+        .about-image img {
+            border-radius: 40px;
+            width: 500px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Me</a>
+        <a href="works.html">Works</a>
+        <a href="skills.html">Skills</a>
+     <a href="#" class="btn">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section class="about-section">
+        <!-- Text Section -->
+        <div class="about-text">
+            <h1>ABOUT ME</h1><br>
+            <p>I am Manasa Shankar, a passionate UI/UX and Interaction Designer with a love of creating and problem-solving.</p>
+            <p>I see the world around me as design! Rather than solely relying on books and online resources, I learn through real-world experiences and observations of things around me which I believe makes me different from others.</p>
+            <p>I love to collaborate, communicate, and bring fresh ideas to the table. I look forward to presenting my skills while parallely expanding my knowledge in the evolving design landscape.</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+
+        <!-- Image Section -->
+        <div class="about-image">
+            <img src="https://i.pinimg.com/736x/f6/4a/73/f64a73c1f20524c6d408e0045d908796.jpg" alt="Manasa Shankar">
+        </div>
+    </section>
+
+</body>
+</html>
